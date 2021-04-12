@@ -1,0 +1,23 @@
+doctype html
+head
+  title Comentarios Aqui
+
+#container1.col(style='background-color: cyan')
+   center
+    h1 Cadastrar o Comentario: 
+    form(action='/auth' method='post')
+      p Usuario: 
+        input(type='text' name='usuario' size='120')
+        p
+      p E-mail:
+        input(type='text' name='email' size='120')
+        p
+      p Comentario:
+      p
+        textarea(cols='120' rows='10' name='coments') Comente aqui
+      p
+      p Senha:
+        input(type='password' name='pass' size='120')
+        p
+        input(type='submit' name='cadastrar' value='cadastrar')
+        p 
